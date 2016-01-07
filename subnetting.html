@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Subnetting</title>
+<style>
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+table {
+	width: 100%;
+}
+#container {
+	position: relative;
+	margin: 0px auto;
+	width: 800px;
+}
+input[type=text], input[type=text]:focus {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+	border-radius: 2px !important;
+	border: 1px solid #cccccc;
+}
+.centerDot {
+	font-size: 24px;
+	padding: 10px;
+}
+.right {
+	background-color: #063;
+	color: white;
+}
+.wrong {
+	background-color: #903;
+	color: white;
+}
+.btns {
+	padding: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+	margin: 5px;
+	width: 100px;
+}
+.box {
+	padding: 2px;
+	border: 1px solid #cccccc;
+	text-align: center;
+	width: 50px;
+	font-size: 8px;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="splash">
+    <p>What would you like to do?</p>
+    <div class="btns" id="exce">Overview</div>
+    <div class="btns" id="col">Check on Learning</div>
+  </div>
+  <div id="checkOnLearning">
+    <div id="question"></div>
+    <br>
+    <br>
+    <!-- <table id="overviewTab">
+      <tr>
+        <td colspan="7">Overview:</td>
+      </tr>
+    <tr>
+        <td><input type="text" class="textfield_indi" id="o1"></td>
+        <td><input type="text" class="textfield_indi" id="o2"></td>
+        <td><input type="text" class="textfield_indi" id="o3"></td>
+        <td><input type="text" class="textfield_indi" id="o4"></td>
+        <td><input type="text" class="textfield_indi" id="o5"></td>
+        <td><input type="text" class="textfield_indi" id="o6"></td>
+        <td><input type="text" class="textfield_indi" id="o7"></td>
+        <td><input type="text" class="textfield_indi" id="o8"></td>
+        <td class="centerDot">|</td>
+        <td><input type="text" class="textfield_indi" id="o1"></td>
+        <td><input type="text" class="textfield_indi" id="o2"></td>
+        <td><input type="text" class="textfield_indi" id="o3"></td>
+        <td><input type="text" class="textfield_indi" id="o4"></td>
+        <td><input type="text" class="textfield_indi" id="o5"></td>
+        <td><input type="text" class="textfield_indi" id="o6"></td>
+        <td><input type="text" class="textfield_indi" id="o7"></td>
+        <td><input type="text" class="textfield_indi" id="o8"></td>
+        <td class="centerDot">|</td>
+        <td><input type="text" class="textfield_indi" id="o1"></td>
+        <td><input type="text" class="textfield_indi" id="o2"></td>
+        <td><input type="text" class="textfield_indi" id="o3"></td>
+        <td><input type="text" class="textfield_indi" id="o4"></td>
+        <td><input type="text" class="textfield_indi" id="o5"></td>
+        <td><input type="text" class="textfield_indi" id="o6"></td>
+        <td><input type="text" class="textfield_indi" id="o7"></td>
+        <td><input type="text" class="textfield_indi" id="o8"></td>
+        <td class="centerDot">|</td>
+        <td><input type="text" class="textfield_indi" id="o1"></td>
+        <td><input type="text" class="textfield_indi" id="o2"></td>
+        <td><input type="text" class="textfield_indi" id="o3"></td>
+        <td><input type="text" class="textfield_indi" id="o4"></td>
+        <td><input type="text" class="textfield_indi" id="o5"></td>
+        <td><input type="text" class="textfield_indi" id="o6"></td>
+        <td><input type="text" class="textfield_indi" id="o7"></td>
+        <td><input type="text" class="textfield_indi" id="o8"></td>
+      </tr>
+      <tr>
+        <td class="box">128</td>
+        <td class="box">64</td>
+        <td class="box">32</td>
+        <td class="box">16</td>
+        <td class="box">8</td>
+        <td class="box">4</td>
+        <td class="box">2</td>
+        <td class="box">1</td>
+        <td class="centerDot">|</td>
+        <td class="box">128</td>
+        <td class="box">64</td>
+        <td class="box">32</td>
+        <td class="box">16</td>
+        <td class="box">8</td>
+        <td class="box">4</td>
+        <td class="box">2</td>
+        <td class="box">1</td>
+        <td class="centerDot">|</td>
+        <td class="box">128</td>
+        <td class="box">64</td>
+        <td class="box">32</td>
+        <td class="box">16</td>
+        <td class="box">8</td>
+        <td class="box">4</td>
+        <td class="box">2</td>
+        <td class="box">1</td>
+        <td class="centerDot">|</td>
+        <td class="box">128</td>
+        <td class="box">64</td>
+        <td class="box">32</td>
+        <td class="box">16</td>
+        <td class="box">8</td>
+        <td class="box">4</td>
+        <td class="box">2</td>
+        <td class="box">1</td>
+      </tr>
+    </table>--> 
+    <!--
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    -->
+    <label>Number of computers</label>
+<input name="" type="text" id="numComps">
+    <table id="binTab">
+      <tr>
+        <td colspan="7">Binary:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="b1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b4"></td>
+      </tr>
+    </table>
+    <table id="decTab">
+      <tr>
+        <td colspan="7">Decimal:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="a1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a4"></td>
+        <td class="centerDot">/</td>
+        <td><input type="text" class="textfield" id="a5"></td>
+      </tr>
+    </table>
+    <table id="hexTab">
+      <tr>
+        <td colspan="7">Hexidecimal:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="c1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c4"></td>
+      </tr>
+    </table>
+    
+    
+    
+    
+    
+     <table id="nmTab">
+      <tr>
+        <td colspan="7">Subnet Mask in Binary:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="e1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="e2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="e3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="e4"></td>
+      </tr>
+    </table>   
+    
+    
+    
+    
+    
+    
+    
+    <table id="nmTab">
+      <tr>
+        <td colspan="7">Subnet Mask in Decimal:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="d1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="d2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="d3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="d4"></td>
+      </tr>
+    </table>
+<!--    <table id="nidTab">
+      <tr>
+        <td colspan="7">Network ID in Decimal:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="c1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c4"></td>
+      </tr>
+    </table>-->
+   <!-- <table id="hidTab">
+      <tr>
+        <td colspan="7">Host ID in Decimal:</td>
+      </tr>
+      <tr>
+        <td><input type="text" class="textfield" id="d1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="cd2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="cd3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="d4"></td>
+      </tr>
+    </table>-->
+    <table id="subNet">
+      <tr>
+        <td>Number of Subnets</td>
+        <td><input type="text" class="textfield" id="subnets"></td>
+      </tr>
+      <tr>
+        <td>Number of Usable Hosts Per Subnet</td>
+        <td><input type="text" class="textfield" id="hosts"></td>
+      </tr>
+    </table>
+    <button id="checker">Convert</button>
+    <button id="answer">Answer</button>
+    <div id="response"></div>
+  </div>
+</div>
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+<script src="js/subnetting.js"></script> 
+<script>
+var subnet = new subnetting();
+
+</script>
+</body>
+</html>

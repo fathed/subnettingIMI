@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Subnetting</title>
+<style>
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+table {
+	width: 100%;
+}
+#container {
+	position: relative;
+	margin: 0px auto;
+	width: 800px;
+}
+.textfield {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.centerDot {
+	font-size: 24px;
+	padding: 10px;
+}
+.right {
+	background-color: #063;
+	color: white;
+}
+.wrong {
+	background-color: #903;
+	color: white;
+}
+.btns {
+	padding: 10px;
+	border: 1px solid black;
+	cursor: pointer;
+	margin: 5px;
+	width: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+  <div id="splash">
+    <p>What would you like to do?</p>
+    <div class="btns" id="exce">Excersize</div>
+    <div class="btns" id="col">Check on Learning</div>
+  </div>
+  <div id="checkOnLearning">
+    <div id="question"></div>
+    <table id="binTab">
+      <tr>
+        <td><input type="text" class="textfield" id="b1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="b4"></td>
+      </tr>
+    </table>
+    <table id="decTab">
+      <tr>
+        <td><input type="text" class="textfield" id="a1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="a4"></td>
+      </tr>
+    </table>
+    <table id="hexTab">
+      <tr>
+        <td><input type="text" class="textfield" id="c1"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c2"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c3"></td>
+        <td class="centerDot">.</td>
+        <td><input type="text" class="textfield" id="c4"></td>
+      </tr>
+    </table>
+        <table id="subNet">
+      <tr>
+        <td>Number of Subnets</td>
+        <td><input type="text" class="textfield" id="d1"></td>
+
+      </tr>
+       <tr>
+        <td>Number of Usable Hostes Per Subnet</td>
+        <td><input type="text" class="textfield" id="d2"></td>
+       
+      </tr>
+    </table>
+    <button id="checker">Convert</button>
+    <button id="answer">Answer</button>
+    <div id="response"></div>
+  </div>
+</div>
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script> 
+<script src="js/subnetting.js"></script>
+<script src="js/ConvertBinToDec.js"></script>
+<script src="js/ConvertToDec.js"></script>
+<script src="js/ConvertToBin.js"></script>
+<script src="js/ConvertToHex.js"></script>
+
+<script>
+var subnet = new subnetting();
+
+</script>
+</body>
+</html>

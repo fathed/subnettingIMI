@@ -1,0 +1,29 @@
+#entryBox {
+	position: absolute;
+	background-color: #FFF;
+	border: 1px solid black;
+	width: 300px;
+	z-index: 999;
+	font-size: 10px;
+	left:30%;
+	top:200px;
+}
+#entryBox_header {
+	background-color: #282828;
+	padding: 5px;
+	color: #FFF;
+	font-size: 10px;
+}
+#entryBox_bdy {
+	padding: 10px;
+}
+.eb_input {
+	width: 90%;
+	text-align: center
+}
+#entryBox_bdy table {
+}
+.eb_btn{
+	font-size:10px;
+	float:right;
+	margin:10px 0 10px 0;}

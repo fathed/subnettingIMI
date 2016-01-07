@@ -1,0 +1,159 @@
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	padding:0;
+	margin:0;
+}
+
+#nav {
+	position: fixed;
+	padding: 5px;
+	color: #FFF;
+	font-size: 10px;
+	background-color: #282828;
+	width:100%;
+}
+#container {
+
+}
+#bdy {
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	width: 870px;
+	height: 702px;
+	margin: 0 auto;
+	position: relative
+}
+#pc1_ip {
+	position: absolute;
+	left: 65px;
+	top: 294px;
+}
+#pc2_ip {
+	position: absolute;
+	left: 65px;
+	top: 425px;
+}
+#pc3_ip {
+	position: absolute;
+	left: 65px;
+	top: 565px;
+}
+#pc4_ip {
+	position: absolute;
+	left: 286px;
+	top: 294px;
+}
+#pc5_ip {
+	position: absolute;
+	left: 286px;
+	top: 425px;
+}
+#pc6_ip {
+	position: absolute;
+	left: 286px;
+	top: 566px;
+}
+#pc7_ip {
+	position: absolute;
+	left: 496px;
+	top: 295px;
+}
+#pc8_ip {
+	position: absolute;
+	left: 496px;
+	top: 425px;
+}
+#pc9_ip {
+	position: absolute;
+	left: 496px;
+	top: 565px;
+}
+#pc10_ip {
+	position: absolute;
+	left: 716px;
+	top: 294px;
+}
+#pc11_ip {
+	position: absolute;
+	left: 716px;
+	top: 425px;
+}
+#pc12_ip {
+	position: absolute;
+	left: 716px;
+	top: 564px;
+}
+#pc13_ip {
+	position: absolute;
+	top: 119px;
+	left: 67px;
+}
+#pc14_ip {
+	position: absolute;
+	top: 119px;
+	left: 286px;
+}
+#pc15_ip {
+	position: absolute;
+	top: 119px;
+	left: 500px;
+}
+#pc16_ip {
+	position: absolute;
+	top: 119px;
+	left: 713px;
+}
+
+#staticIP {
+    text-align: center;
+    
+}
+
+#directions_txt {
+    
+    margin: 5px;
+    
+}
+
+#directions_btn {
+    margin-left: 120px;
+    width: 100px; 
+    cursor: pointer; 
+    border:1px solid #000000; 
+    border-radius: 5px; 
+    text-align:center; 
+    background-color:#E6E6FA;
+    //background-color: #99CCCC   
+}
+
+.pcTargets {
+	cursor: pointer;
+}
+.ipAdd {
+	font-size: 10px;
+	background-color: #FFF;
+	padding: 3px;
+	border: 1px solid black;
+	min-width:90px;
+	height:12px;
+	text-align:center;
+}
+
+
+
+.yellowText{
+	background-color:#fbb000 !important;
+}
+        
+.greenText{
+            background-color:#99FF00 !important;
+}
+
+.redText {
+        border-color : #FF0000;
+	background-color : #FF0000;
+        color : #FFFFFF
+    
+}
+        
+        
